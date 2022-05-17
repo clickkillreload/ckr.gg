@@ -1,0 +1,13 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+html, body, #___gatsby, #gatsby-focus-wrapper, .app {
+  height: 100%;
+}
+
+// Bootstrap Overrides
+$primary: #fff;
+$body-color: #fff;
+$body-bg: #011128;
+
+// Needs to be last for some reason, will figure this out later
+@import 'bootstrap/scss/bootstrap.scss';

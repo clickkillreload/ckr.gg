@@ -5,3 +5,14 @@
  */
 
 // You can delete this file if you're not using it
+exports.createPages = async ({ graphql, actions }) => {
+	const { createRedirect } = actions;
+		
+	createRedirect({
+    fromPath: `/discord`,
+    toPath: `https://discord.gg/2smkj7kADy`,
+    redirectInBrowser: true,
+    isPermanent: true,
+    statusCode: 200
+  });
+}
